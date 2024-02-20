@@ -1,0 +1,50 @@
+.tech-icon{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55px;
+}
+
+.react {
+    background-image: url("./assets/svg/react.svg");
+}
+
+.angular {
+    background-image: url("./assets/svg/angular.svg");
+}
+
+.bootstrap {
+    background-image: url("./assets/svg/bootstrap.svg");
+}
+
+.nodejs {
+    background-image: url("./assets/svg/nodejs.svg");
+}
+
+.express {
+    background-image: url("./assets/svg/express.svg");
+}
+
+.mongodb {
+    background-image: url("./assets/svg/mongodb.svg");
+}
+
+.mysql {
+    background-image: url("./assets/svg/mysql.svg");
+}
+
+.flutter {
+    background-image: url("./assets/svg/flutter.svg");
+}
+
+.kotlin {
+    background-image: url("./assets/svg/kotlin.svg");
+}
+
+.android {
+    background-image: url("./assets/svg/android.svg");
+}
+
+.wordpress {
+    background-image: url("./assets/svg/wordpress.svg");
+}
