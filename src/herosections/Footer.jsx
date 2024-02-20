@@ -34,11 +34,11 @@ function Footer() {
               Contact No : 8655373383
             </div>
             <div className="sm:w-3/4 text-red-50 text-center whitespace-nowrap font-bold">
-              Email Id : veerajinkya1@gmail.com
+              Email Id : magnitetechsolutions@gmail.com
             </div>
           </div>
           <a
-            href="mailto:veerajinkya1@gmail.com"
+            href="mailto:magnitetechsolutions@gmail.com"
             className="bg-white shadow-md px-10 py-4 rounded-lg text-red-500 font-bold mt-6 cursor-pointer"
           >
             Get Quote
