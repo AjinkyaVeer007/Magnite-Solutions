@@ -55,7 +55,7 @@ function Footer() {
               <MdEmail size={"25px"} color={theme.primary} />
             </div>
             <div style={{ color: theme.light }}>
-              Email : veerajinkya1@gmail.com
+              Email : magnitesolutiontech@gmail.com
             </div>
           </div>
         </div>
