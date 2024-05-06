@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Inter", sans-serif !important;
+  }
+
+.pointer{
+    cursor: pointer !important;
+}
+
+.serviceCard{
+    transition: 0.2s ease-in-out;
+}
+
+.serviceCard:hover{
+    background-color: #F5F5F5;
+    color: #FF5E14;
+    border: 1px solid #FF5E14 !important;
+}
+
+.techCard{
+    transition: 0.2s ease-in-out;
+}
+
+.techCard:hover{
+    background-color: #F5F5F5;
+    color: #FF5E14;
+    border: 1px solid #FF5E14 !important;
+}

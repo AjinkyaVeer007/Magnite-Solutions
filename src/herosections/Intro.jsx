@@ -1,22 +1,37 @@
 import React from "react";
+import { theme } from "../utils/constant";
+import introImg from "../assets/svg/intro.svg";
 
 function Intro() {
   return (
-    <div className="animeBottomToTop">
-      <div className="text-center sm:mt-32 mt-6 sm:text-5xl text-3xl font-bold mb-6 text-white">
-        Welcome to Magnite Solutions
-      </div>
-      <div className="flex justify-center">
-        <div className="w-3/4 text-red-200 text-center">
-          We believe in the transformative power of technology to shape the
-          future. As a dynamic web and Android development company, we are
-          dedicated to creating innovative solutions that not only meet but
-          exceed the expectations of our clients. With a passion for excellence
-          and a commitment to quality, we embark on every project with
-          enthusiasm, creativity, and expertise. Let us be your partner in the
-          digital journey, as we turn your ideas into reality and redefine the
-          standards of excellence in the digital realm.
+    <div
+      style={{ backgroundColor: theme.light }}
+      className="row g-0 align-items-center"
+      id="home"
+    >
+      <div className="col-12 col-lg-6 order-lg-0 order-2">
+        <div
+          style={{
+            color: theme.primary,
+            fontSize: "40px",
+            lineHeight: "normal",
+          }}
+          className="text-center fw-bold"
+        >
+          Welcome to <br />{" "}
+          <span style={{ fontSize: "55px", color: theme.dark }}>
+            Magnite Solutions
+          </span>
         </div>
+        <div
+          className="text-center pb-5 mt-3 fw-medium"
+          style={{ color: theme.secondary }}
+        >
+          The Best Reliable Tech Industry Solution
+        </div>
+      </div>
+      <div className="col-12 col-lg-6 text-center">
+        <img src={introImg} alt="intro img" width={"90%"} />
       </div>
     </div>
   );

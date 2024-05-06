@@ -1,24 +1,36 @@
 import React from "react";
 import TechCard from "../components/TechCard";
+import { theme } from "../utils/constant";
 
 function TechStacks() {
+  const techData = [
+    "wordpress",
+    "react",
+    "angular",
+    "bootstrap",
+    "nodejs",
+    "express",
+    "mongodb",
+    "mysql",
+    "flutter",
+    "kotlin",
+    "android",
+  ];
   return (
-    <div className="pt-10" id="techstack">
-      <div className="text-center text-3xl font-medium text-gray-800">
+    <div className="my-5" id="techstack">
+      <div
+        style={{ color: theme.dark }}
+        className="text-center h3 fw-bold mb-3"
+      >
         Tech Stack
       </div>
-      <div className="flex justify-center flex-wrap gap-10 m-8 bg-gray-50 px-4 py-10 rounded-md">
-        <TechCard name={"wordpress"} />
-        <TechCard name={"react"} />
-        <TechCard name={"angular"} />
-        <TechCard name={"bootstrap"} />
-        <TechCard name={"nodejs"} />
-        <TechCard name={"express"} />
-        <TechCard name={"mongodb"} />
-        <TechCard name={"mysql"} />
-        <TechCard name={"flutter"} />
-        <TechCard name={"kotlin"} />
-        <TechCard name={"android"} />
+      <div className="row g-0 justify-content-center m-3 m-lg-5">
+        {techData &&
+          techData.map((tech) => (
+            <div key={tech} className="col-4 col-lg-2">
+              <TechCard name={tech} />
+            </div>
+          ))}
       </div>
     </div>
   );

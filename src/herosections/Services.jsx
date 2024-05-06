@@ -1,20 +1,31 @@
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
-import Divider from "../components/Divider";
+import { theme } from "../utils/constant";
 
 function Services() {
+  const servicesData = [
+    "Website Development",
+    "Application Development",
+    "E-Commerce",
+    "Management System",
+    "UI-UX",
+    "Graphic Designs",
+  ];
   return (
-    <div className="pt-10" id="service">
-      <div className="text-center text-3xl font-medium text-gray-800">
+    <div className="pt-10 my-5" id="service">
+      <div
+        style={{ color: theme.dark }}
+        className="text-center h3 fw-bold mb-3"
+      >
         Our Services Includes
       </div>
-      <div className="grid sm:grid-cols-3 sm:gap-8 gap-3 sm:m-8 m-4 sm:p-10 p-4 bg-gray-50">
-        <ServiceCard name={"Website Development"} />
-        <ServiceCard name={"Application Development"} />
-        <ServiceCard name={"E-Commerce"} />
-        <ServiceCard name={"Management System"} />
-        <ServiceCard name={"UI-UX"} />
-        <ServiceCard name={"Graphic Designs"} />
+      <div className="row g-0">
+        {servicesData &&
+          servicesData.map((service) => (
+            <div key={service} className="col-12 col-lg-4 p-2 p-lg-3">
+              <ServiceCard name={service} />
+            </div>
+          ))}
       </div>
     </div>
   );
